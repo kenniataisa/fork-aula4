@@ -45,3 +45,12 @@ function calcularProporcao() {
     // 4. EXIBIR O RESULTADO NO ELEMENTO H2
     document.getElementById('resultado').innerHTML = `${valor1} é **${resultadoFormatado}%** de ${valor2}.`;
 }
+
+// -----------------------------------------------------------------------------
+// Nova função para limpar os campos e o resultado.
+// -----------------------------------------------------------------------------
+function limpar() {
+    document.getElementById('valor1').value = '';
+    document.getElementById('valor2').value = '';
+    document.getElementById('resultado').innerHTML = 'O resultado aparecerá aqui';
+}
